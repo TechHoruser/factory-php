@@ -4,3 +4,5 @@
  1. Realizariamos el Modelo (Expediente), que nos rescataría del DataSource el expediente a visualizar y se realizaría un formateo de los datos relevantes para el uso.
  2. Posteriormente podríamos crear una vista donde visualizar esos datos
  3. Finalmente haríamos el controlador para expedientes con una acción view o similar, que simplemente rescatara con el modelo el expediente en cuestión y se lo pasara a la vista para su renderización
+
+ 2. Según el estado del expediente va a cambiar la tabla a mostrar 

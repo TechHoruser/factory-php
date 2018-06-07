@@ -4,8 +4,8 @@ class ExpedientController extends Controller
 {
   public function actionView($id)
   {
-    $expedients = Expedient::findAll($id);
+    $expedient = Expedient::find($id);
 
-    $this->render('expedient/index', $expedients)
+    $this->render('expedient/index', compact( $expedient ))
   }
 }
