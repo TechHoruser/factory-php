@@ -2,5 +2,5 @@
 
 class Expedient extends Model
 {
-  
+
 }
