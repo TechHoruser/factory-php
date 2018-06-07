@@ -5,6 +5,11 @@
     <title>Example Factory</title>
   </head>
   <body>
+    <?= if( $expedient->status == 'abierta') { ?>
+      <a href="#/donwload-open-expedient"></a>
+    <?= elseif( $expedient->status == 'cerrada') { ?>
+      <a href="#/donwload-close-expedient"></a>
+    <?= } ?>
     <form name="form1" method="post" action="edit.php">
         <table border="0">
             <tr>
