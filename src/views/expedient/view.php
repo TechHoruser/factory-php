@@ -15,6 +15,7 @@
                 <td>Encargado</td>
                 <td><input type="text" name="age" value="<?php echo $expedient->in_charge;?>"></td>
             </tr>
+            <?= if( $expedient->status == 'abierta') { ?>
             <tr>
                 <td>Zona</td>
                 <td><input type="text" name="email" value="<?php echo $expedient->zone;?>"></td>
@@ -27,6 +28,16 @@
                 <td>Herramientas</td>
                 <td><input type="text" name="email" value="<?php echo $expedient->tools;?>"></td>
             </tr>
+            <?= elseif( $expedient->status == 'cerrada') { ?>
+            <tr>
+                <td>Tiempo</td>
+                <td><input type="text" name="email" value="<?php echo $expedient->time;?>"></td>
+            </tr>
+            <tr>
+                <td>Precio</td>
+                <td><input type="text" name="email" value="<?php echo $expedient->price;?>"></td>
+            </tr>
+            <?= } ?>
         </table>
     </form>
 </body>
